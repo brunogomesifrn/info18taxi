@@ -12,6 +12,18 @@ $email = $_POST['username'];
 $senha = $_POST['pass'];
 }
 
+<<<<<<< HEAD
+=======
+<?php
+$usu = $_POST['username'];
+$pass =  $_POST['pass'];
+
+if (($usu == "admin")&&($pass == "123")) {
+	echo "Logado";
+}else{
+	echo "Você errou algum dado!";
+}
+>>>>>>> 03aa78a3cfec6600eaedb119c611d122ef7938b9
 ?>
 </body>
 </html>
