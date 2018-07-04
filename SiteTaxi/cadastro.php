@@ -1,26 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Criar conta php</title>
+</head>
+<body>
+
+
+
 <?php
 
 $vnome=$_POST["nome"];
-$vsobrenome=$_POST["sobrenome"];
-$vnascimento=$_POST["nascimento"];
+$vdia=$_POST["dia"];
+$vmes=$_POST["mes"];
+$vano=$_POST["ano"];
+$vrg=$_POST["rg"];
 $vcpf=$_POST["cpf"];
+
 $vrua=$_POST["rua"];
-$vnumero=$_POST["numero"];
 $vbairro=$_POST["bairro"];
 $vestado=$_POST["estado"];
 $vcidade=$_POST["cidade"];
-$vcep=$_POST["cep"];
+
 $vemail=$_POST["email"];
 $vlogin=$_POST["login"];
 $vpass=$_POST["pass"];
 $vpassconfirm=$_POST["passconfirm"];
 
-echo "Nome: ".$vnome."<br/>Sobrenome: ".$vsobrenome."<br/>";
-echo "Nascimento: ".$vnascimento."<br/>cpf: ".$vcpf."<br/>";
-echo "Rua: ".$vrua."<br/>Numero: ".$vnumero."<br/>";
-echo "Bairro: ".$vbairro."<br/>Estado: ".$vestado."<br/>";
-echo "Cidade: ".$vcidade."<br/>CEP: ".$vcep."<br/>";
-echo "Email: ".$vemail."<br/>Login: ".$vlogin."<br/>";
-echo "Pass: ".$vpass."<br/>Comfirmar Senha: ".$vpassconfirm."<br/>";
+echo "Nome: ".$vnome."<br/>";
+echo "Nascimento: ".$vdia."/".$vmes."/".$vano."<br/>"; 
+echo "CPF: ".$vcpf."<br/>";
+echo "Rua: ".$vrua."<br/>";
+echo "Bairro: ".$vbairro."<br/>";
+echo "Estado: ".$vestado."<br/>";
+echo "Cidade: ".$vcidade."<br/>";
+echo "Email: ".$vemail."<br/>"; 
+echo "Login: ".$vlogin."<br/>";
+echo "Senha: ".$vpass."<br/>"; 
+echo "Comfirmar Senha: ".$vpassconfirm."<br/>";
 
 ?>
+	
+</body>
+</html>
