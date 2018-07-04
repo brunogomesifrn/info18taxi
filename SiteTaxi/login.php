@@ -6,8 +6,14 @@
 <body>
 
 <?php
-echo $_POST['username'];
-echo $_POST['pass'];
+$usu = $_POST['username'];
+$pass =  $_POST['pass'];
+
+if (($usu == "admin")&&($pass == "123")) {
+	echo "Logado";
+}else{
+	echo "vai tomar no cu";
+}
 ?>
 </body>
 </html>
