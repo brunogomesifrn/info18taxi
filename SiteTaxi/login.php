@@ -12,7 +12,7 @@ $pass =  $_POST['pass'];
 if (($usu == "admin")&&($pass == "123")) {
 	echo "Logado";
 }else{
-	echo "vai tomar no cu";
+	echo "Você errou algum dado!";
 }
 ?>
 </body>
