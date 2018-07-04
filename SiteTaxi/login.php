@@ -5,11 +5,9 @@
 </head>
 <body>
 
-<<?php 
-
-
-
-
- ?>
+<?php
+echo $_POST['username'];
+echo $_POST['pass'];
+?>
 </body>
 </html>
