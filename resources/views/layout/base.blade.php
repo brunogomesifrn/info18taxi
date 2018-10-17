@@ -16,15 +16,16 @@
 
     <!-- Bootstrap core CSS -->
 
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="css/round-about.css" rel="stylesheet">
+     <link href="{{asset('css/round-about.css')}}" rel="stylesheet">
+    
 <style>
     
     body {
       margin: 0px;
-      background: url(imgs/background1.jpg) fixed;
+      background: url(img/background1.jpg) fixed;
       width: 100%;
       height: auto;
         background-repeat: no-repeat;
@@ -34,7 +35,7 @@
   </style>
   
   </head>
-
+<body>
   @yield('conteudo')
 	
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> 

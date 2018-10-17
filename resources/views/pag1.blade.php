@@ -51,7 +51,7 @@
 	
 			 
 			 <!-- animação carrinho -->
-   <marquee behavior="alternate" scrolldelay="1"> <img src="imgs/rock_3.png"> </marquee>
+   <marquee behavior="alternate" scrolldelay="1">  <img src="img/rock_3.png"> </marquee>
      <!-- mapa -->
 	 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15863.880428357348!2d-35.206451777270416!3d-6.267661818906758!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1519182233019" width="1100" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
 	 <p>
