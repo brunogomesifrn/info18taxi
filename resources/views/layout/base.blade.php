@@ -38,6 +38,9 @@
   @yield('conteudo')
   @yield('conta')
   @yield('login')
+  @yield('contato')
+  @yield('sobre')
+
   
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> 
   <div class="container">
