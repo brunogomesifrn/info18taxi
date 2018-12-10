@@ -18,3 +18,7 @@ Route::get('/', function () {
 Route::get('/criarconta', function () {
     return view('criarconta');
 });
+
+Route::get('/fazerlogin', function () {
+    return view('login');
+});

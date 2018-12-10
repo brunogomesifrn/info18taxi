@@ -36,7 +36,8 @@
   </head>
 <body>
   @yield('conteudo')
-    @yield('conta')
+  @yield('conta')
+  @yield('login')
   
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> 
   <div class="container">
