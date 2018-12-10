@@ -13,7 +13,7 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item ">
-              <a class="nav-link" href="index.html">Página Inicial</a>
+              <a class="nav-link" href="/">Página Inicial</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/criarconta">Criar Conta</a>
@@ -27,7 +27,7 @@
               </a>
             </li>
             <li class="nav-item ">
-              <a class="nav-link" href="sobre.html">Sobre </a>
+              <a class="nav-link" href="/sobre.html">Sobre </a>
             </li>
           </ul>
         </div>
