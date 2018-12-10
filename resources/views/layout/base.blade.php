@@ -30,6 +30,9 @@
         background-repeat: no-repeat;
         background-size:100%;
         background-size: cover;
+        #clear {
+        clear:both;
+             }
     }   
   </style>
   
