@@ -24,10 +24,10 @@
                 <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contato.html">Contato</a>
+              <a class="nav-link" href="/contato">Contato</a>
             </li>
             <li class="nav-item ">
-              <a class="nav-link" href="sobre.html">Sobre </a>
+              <a class="nav-link" href="/sobre">Sobre </a>
             </li>
           </ul>
         </div>
