@@ -12,5 +12,9 @@
 */
 
 Route::get('/', function () {
-    return view('pag1');
+    return view('index');
+});
+
+Route::get('/criarconta', function () {
+    return view('criarconta');
 });

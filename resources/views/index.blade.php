@@ -13,11 +13,11 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">    
             <li class="nav-item active">
-              <a class="nav-link" href="index.html">Página Inicial
+              <a class="nav-link" href="/">Página Inicial
                 <span class="sr-only">(current)</span>
               </a>
              <li class="nav-item">
-              <a class="nav-link" href="criar%20conta.html">Criar Conta</a>
+              <a class="nav-link" href="/criarconta">Criar Conta</a>
             </li>
             <li class="nav-item ">
               <a class="nav-link" href="fazerLogin.html">Fazer login </a>
