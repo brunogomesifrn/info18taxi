@@ -22,4 +22,7 @@ Route::get('/criarconta', function () {
 Route::get('/contato', function () {
     return view('contato');
 });
+Route::get('/sobre', function () {
+    return view('sobre');
+});
 
