@@ -23,7 +23,7 @@
               <a class="nav-link" href="fazerLogin.html">Fazer login </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contato.html">Contato</a>
+              <a class="nav-link" href="/contato">Contato</a>
             </li>
             <li class="nav-item ">
               <a class="nav-link" href="sobre.html">Sobre </a>
