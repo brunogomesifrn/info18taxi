@@ -23,7 +23,6 @@ Route::get('/criarconta', function () {
 Route::get('/fazerlogin', function () {
     return view('login');
 });
-=======
 Route::get('/contato', function () {
     return view('contato');
 });
