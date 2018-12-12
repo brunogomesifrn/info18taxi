@@ -19,15 +19,15 @@
               <a class="nav-link" href="/criarconta">Criar Conta</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="fazerLogin.html">Fazer login
+              <a class="nav-link" href="/fazerlogin">Fazer login
               </a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="contato.html">Contato <span class="sr-only">(current)</span>
+              <a class="nav-link" href="/contato">Contato <span class="sr-only">(current)</span>
               </a>
             </li>
             <li class="nav-item ">
-              <a class="nav-link" href="/sobre.html">Sobre </a>
+              <a class="nav-link" href="/sobre">Sobre </a>
             </li>
           </ul>
         </div>
