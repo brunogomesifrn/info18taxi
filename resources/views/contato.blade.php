@@ -1,5 +1,5 @@
 @extends('layout.base')
-@section('contato')
+@section('conteudo')
 <body>
 
     <!-- Navigation -->

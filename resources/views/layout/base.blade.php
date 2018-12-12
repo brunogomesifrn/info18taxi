@@ -38,12 +38,55 @@
   
   </head>
 <body>
-  @yield('conteudo')
-  @yield('conta')
-  @yield('login')
-  @yield('contato')
-  @yield('sobre')
 
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="/">LOCAL TAXI </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">    
+            <li class="nav-item active">
+              <a class="nav-link" href="/">Página Inicial
+                <span class="sr-only">(current)</span>
+              </a>
+
+              @guest
+             <li class="nav-item">
+              <a class="nav-link" href="/register">Criar Conta</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" href="/login">Fazer login </a>
+            </li>
+            @endguest
+
+            @auth
+            <li class="nav-item">
+              <a class="nav-link" href="/home">Pefil</a>
+            </li>
+              <li class="nav-item">
+              <a class="nav-link" href="/logout">Logout</a>
+            </li>
+            @endauth
+
+            <li class="nav-item">
+              <a class="nav-link" href="/contato">Contato</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" href="/sobre">Sobre </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    <!-- Page Content -->
+   
+  @yield('conteudo')
   
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> 
   <div class="container">

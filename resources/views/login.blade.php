@@ -1,5 +1,5 @@
 @extends('layout.base')
-@section('login')
+@section('conteudo')
 
      <body>
 

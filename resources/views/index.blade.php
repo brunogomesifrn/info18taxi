@@ -1,49 +1,13 @@
 @extends('layout.base')
 @section('conteudo')
-<body>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">LOCAL TAXI </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">    
-            <li class="nav-item active">
-              <a class="nav-link" href="/">Página Inicial
-                <span class="sr-only">(current)</span>
-              </a>
-             <li class="nav-item">
-              <a class="nav-link" href="/criarconta">Criar Conta</a>
-            </li>
-            <li class="nav-item ">
-              <a class="nav-link" href="/fazerlogin">Fazer login </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/contato">Contato</a>
-            </li>
-            <li class="nav-item ">
-              <a class="nav-link" href="/sobre">Sobre </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-
-    <!-- Page Content -->
-    <div class="container">
 
 
 
       <!-- Introduction Row -->
 
 
-      <h2 class="my-4">Olá,
-        <small>Seja Bem-Vindo!</small></h2>
+
 
  <p> Nosso site fornece informações sobre o transporte privado da cidade de Goianinha/RN e região, nosso objetivo é fornecer segurança para os usuários, para que possam de forma segura viajar para o seu local de destino. 
   Para mais informaçoes, acesse <a href="sobre.html"> sobre</a>. </p>
@@ -72,48 +36,16 @@
           <h2 class="my-4">Motoristas Cadastrados</h2>
         </div>
 		</div>
+    @foreach($motoristas as $m)
+
         <div class="col-lg-4 col-sm-6 text-center mb-4">
           <img class="rounded-circle img-fluid d-block mx-auto" src="http://www.drivr.es/wp-content/uploads/2017/06/conductor-drivr.png" alt="">
-          <h3>Nome do motorista <br/>
-            <small>Tipo de serviço</small>
+          <h3> {{$m->nome}}<br/>
+            <small>{{$m->telefone}}</small>
           </h3>
-          <p>Descrição do motorista</p>
+          <p>{{$m->sexo}}</p>
         </div>
-        <div class="col-lg-4 col-sm-6 text-center mb-4">
-          <img class="rounded-circle img-fluid d-block mx-auto" src="http://www.drivr.es/wp-content/uploads/2017/06/conductor-drivr.png" alt="">
-         <h3>Nome do motorista <br/>
-            <small>Tipo de serviço</small>
-          </h3>
-          <p>Descrição do motorista</p>
-        </div>
-        <div class="col-lg-4 col-sm-6 text-center mb-4">
-          <img class="rounded-circle img-fluid d-block mx-auto" src="http://www.drivr.es/wp-content/uploads/2017/06/conductor-drivr.png" alt="">
-          <h3>Nome do motorista <br/>
-            <small>Tipo de serviço</small>
-          </h3>
-          <p>Descrição do motorista</p>
-        </div>
-        <div class="col-lg-4 col-sm-6 text-center mb-4">
-          <img class="rounded-circle img-fluid d-block mx-auto" src="http://www.drivr.es/wp-content/uploads/2017/06/conductor-drivr.png" alt="">
-          <h3>Nome do motorista <br/>
-            <small>Tipo de serviço</small>
-          </h3>
-          <p>Descrição do motorista</p>
-        </div>
-        <div class="col-lg-4 col-sm-6 text-center mb-4">
-          <img class="rounded-circle img-fluid d-block mx-auto" src="http://www.drivr.es/wp-content/uploads/2017/06/conductor-drivr.png" alt="">
-          <h3>Nome do motorista <br/>
-            <small>Tipo de serviço</small>
-          </h3>
-          <p>Descrição do motorista</p>
-        </div>
-        <div class="col-lg-4 col-sm-6 text-center mb-4">
-          <img class="rounded-circle img-fluid d-block mx-auto" src="http://www.drivr.es/wp-content/uploads/2017/06/conductor-drivr.png" alt="">
-          <h3>Nome do motorista <br/>
-            <small>Tipo de serviço</small>
-          </h3>
-          <p>Descrição do motorista</p>
-        </div>
+  @endforeach
       </div>
     </div>
     @endsection
