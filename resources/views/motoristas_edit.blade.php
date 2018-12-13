@@ -9,20 +9,21 @@
                 <div class="card-header">{{ __('motoristas_cadastrar') }}</div>
 
                 <div class="card-body">
-                    <form method="GET" action="{{ route('motoristas_cadastrar_post') }}">
+                    <form method="GET" action="{{ route('motoristas_edit_post') }}">
                         @csrf
+                        
+                         <div class="form-group row">
+                            <label for="name" class="col-md-4 col-form-label text-md-right">ID</label>
 
+                            <div class="col-md-6">
+                                <input id="id" type="text" class="form-control" name="id" value="{{ $motorista->id }}" required autofocus>
+                            </div>
+                        </div> 
                         <div class="form-group row">
                             <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Nome') }}</label>
 
                             <div class="col-md-6">
-                                <input id="name" type="text" class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}" name="name" value="{{ old('name') }}" required autofocus>
-
-                                @if ($errors->has('name'))
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $errors->first('name') }}</strong>
-                                    </span>
-                                @endif
+                                <input id="name" type="text" class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}" name="name" value="{{ $motorista->nome }}" required autofocus>
                             </div>
                         </div>
 
@@ -30,7 +31,7 @@
                             <label for="cpf" class="col-md-4 col-form-label text-md-right">{{ __('cpf') }}</label>
 
                             <div class="col-md-6">
-                                <input id="cpf" type="text" class="form-control{{ $errors->has('cpf') ? ' is-invalid' : '' }}" name="cpf" value="{{ old('cpf') }}" required autofocus>
+                                <input id="cpf" type="text" class="form-control{{ $errors->has('cpf') ? ' is-invalid' : '' }}" name="cpf" value="{{ $motorista->cpf }}" required autofocus>
 
                                 @if ($errors->has('cpf'))
                                     <span class="invalid-feedback" role="alert">
@@ -44,7 +45,7 @@
                             <label for="telefone" class="col-md-4 col-form-label text-md-right">{{ __('telefone') }}</label>
 
                             <div class="col-md-6">
-                                <input id="name" type="text" class="form-control{{ $errors->has('telefone') ? ' is-invalid' : '' }}" name="telefone" value="{{ old('telefone') }}" required autofocus>
+                                <input id="name" type="text" class="form-control{{ $errors->has('telefone') ? ' is-invalid' : '' }}" name="telefone" value="{{ old('telefone') }}"  >
 
                                 @if ($errors->has('telefone'))
                                     <span class="invalid-feedback" role="alert">

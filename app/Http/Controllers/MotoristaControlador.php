@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Session;
 use App\Motorista;
 class MotoristaControlador extends Controller
 {
@@ -22,7 +23,25 @@ class MotoristaControlador extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create(Request $request)
+    {
+        Motorista::create([
+            'nome' => $request->input('name'),
+            'cpf' => $request->input('cpf'),
+            'telefone' => $request->input('telefone'),
+            'numero_cnh' => $request->input('numero_cnh'),
+            'sexo' => $request->input('sexo'),
+            'tempo_profissao' => $request->input('tempo_profissao'),
+            'categoria' => $request->input('categoria'),
+            'user_id' => $request->input('user_id'),
+        ]);
+
+        $mensagem = "Motorista cadastrado com sucesso";
+        Session::flash('status', $mensagem);
+        return redirect()->route('motoristas_index');
+    }
+
+      public function mostrarform()
     {
         return view('motoristas_cadastrar');
     }
@@ -46,7 +65,8 @@ class MotoristaControlador extends Controller
      */
     public function show($id)
     {
-
+        $motorista = Motorista::find($id);
+        return view('motoristas_edit', compact('motorista'));
     }
 
     /**
@@ -55,9 +75,15 @@ class MotoristaControlador extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Request $request)
     {
-        //
+        $motorista = Motorista::find($request->input('id'));
+        $motorista->nome = $request->input('name');
+
+
+
+        $motorista->save();
+        return redirect()->route('motoristas_index');
     }
 
     /**
@@ -80,7 +106,8 @@ class MotoristaControlador extends Controller
      */
     public function destroy($id)
     {
-        //
+        Motorista::destroy($id);
+        return redirect()->route('motoristas_index');
     }
 
     public function mostrar()

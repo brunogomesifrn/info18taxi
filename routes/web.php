@@ -37,12 +37,22 @@ Route::get('/teste', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/logout', 'Auth\LoginController@logout')->name('home');
+Route::get('/logout', 'Auth\LoginController@logout')->name('logout');
+Route::get('/', 'MotoristaControlador@mostrar')->name('index');
+Route::get('/Cadastro', 'MotoristaControlador@mostrarform')->name('form_cadastro_motorista');
 
 
-Route::get('/motoristas', 'MotoristaControlador@index')->middleware('auth');
-Route::get('/motorista_cadastrar', 'MotoristaControlador@create')->middleware('auth');
-Route::get('/', 'MotoristaControlador@mostrar');
+Route::group(['prefix' => 'motorista', 'middleware' => 'auth'], function() 
+{
+	Route::get('/motoristas', 'MotoristaControlador@index')->name('motoristas_index');
+	Route::get('/motorista_cadastrar', 'MotoristaControlador@create')->name('motoristas_cadastrar_post');
+	Route::get('/motorista_editar', 'MotoristaControlador@edit')->name('motoristas_edit_post');
+	Route::get('/motorista_editar/{id}', 'MotoristaControlador@show')->name('motoristas_edit');
+	Route::get('/motorista_excluir/{id}', 'MotoristaControlador@destroy')->name('motoristas_destroy_post');
+});
+
+
+
 /*
 Route::get('/', function () {
     return view('index');
