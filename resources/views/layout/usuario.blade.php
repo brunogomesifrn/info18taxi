@@ -38,83 +38,11 @@
     <!-- Page Content -->
     <div class="container">
 
-    <!-- DADOS PESSOAIS-->
-	
-<fieldset>
- <legend>Dados Pessoais</legend>
- <table cellspacing="10">
-  <tr>
-   <td>
-    <label for="nome">Nome: </label>
-   </td>
-   <td align="left">
-    <form method='post' action="cadastro.php">
-    <input type="text" name="nome">
-  
-   </td>
-  </tr>
-  
-  <tr>
-   <td>
-    <label>Nascimento: </label>
-   </td>
-   <td align="left">
-    
-    <input type="text" name="dia" size="2" maxlength="2" value="dd"> 
-   <input type="text" name="mes" size="2" maxlength="2" value="mm"> 
-   <input type="text" name="ano" size="4" maxlength="4" value="aaaa">
-
-   </td>
-  </tr>
-
-  <tr>
-   <td>
-    <label for="rg">RG: </label>
-   </td>
-   <td align="left">
-  
-    <input type="text" name="rg" size="13" maxlength="13"> 
-
-   </td>
-  </tr>
-
-  <tr>
-   <td>
-    <label>CPF:</label>
-   </td>
-   <td align="left">
-   
-    <input type="text" name="cpf" size="9" maxlength="9"> - <input type="text" name="cpf2" size="2" maxlength="2">
-
-   </td>
-  </tr>
- </table>
-</fieldset>
-
-<br />
-
+ 
 <!-- DADOS DE LOGIN -->
 <fieldset>
  <legend>Dados de login</legend>
  <table cellspacing="10">
-  <tr>
-   <td>
-    <label for="email">E-mail: </label>
-   </td>
-   <td align="left">
-    <input type="text" name="email">
-   </td>
-  </tr>
-  <tr>
-   <td>
-    <label for="imagem">Imagem de perfil:</label>
-   </td>
-   <td>
-    <input type="file" name="imagem" >
-
-   </td>
-  </tr>
-  <tr>
    <td>
     <label for="login">Login de usuário: </label>
    </td>

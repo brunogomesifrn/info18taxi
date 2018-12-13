@@ -19,6 +19,8 @@
              <li class="nav-item">
               <a class="nav-link" href="/criarconta">Criar Conta</a>
             </li>
+            <a class="nav-link" href="/usuario">Usuario</a>
+            </li>
             <li class="nav-item ">
               <a class="nav-link" href="/fazerlogin">Fazer login </a>
             </li>
