@@ -1,43 +1,6 @@
 @extends('layout.base')
 @section('conteudo')
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">LOCAL TAXI </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">    
-            <li class="nav-item active">
-              <a class="nav-link" href="/">Página Inicial
-                <span class="sr-only">(current)</span>
-              </a>
-             <li class="nav-item">
-              <a class="nav-link" href="/criarconta">Criar Conta</a>
-            </li>
-            <a class="nav-link" href="/usuario">Usuario</a>
-            </li>
-            <li class="nav-item ">
-              <a class="nav-link" href="/fazerlogin">Fazer login </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/contato">Contato</a>
-            </li>
-            <li class="nav-item ">
-              <a class="nav-link" href="/sobre">Sobre </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-
-    <!-- Page Content -->
-    <div class="container">
-
 
 
 
@@ -47,7 +10,7 @@
 
 
  <p> Nosso site fornece informações sobre o transporte privado da cidade de Goianinha/RN e região, nosso objetivo é fornecer segurança para os usuários, para que possam de forma segura viajar para o seu local de destino. 
-  Para mais informaçoes, acesse <a href="/sobre"> sobre</a>. </p>
+  Para mais informaçoes, acesse <a href="sobre.html"> sobre</a>. </p>
 
 	
 			 
