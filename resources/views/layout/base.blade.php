@@ -23,9 +23,9 @@
 <style>
     
     body {
-      margin: 0px;
+      margin: 100px;
       background: url(img/background1.jpg) fixed;
-      width: 100%;
+      width: 90%;
       height: auto;
         background-repeat: no-repeat;
         background-size:100%;
@@ -83,12 +83,21 @@
       </div>
     </nav>
 
+ @yield('conteudo')
+  @yield('extra_scripts')
 
+   </body>
+ 
     <!-- Page Content -->
-   
-  @yield('conteudo')
   
-  <div style="position:fixed;bottom: 0;width:100%;">
+ 
+  
+  <div style="
+  position:fixed;
+  bottom: 0;
+  width:100%; 
+  margin:0px; 
+">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> 
       <div class="container-fluid">
         <p> <a class="navbar-brand" href="http://portal.ifrn.edu.br/">IFRN 2017-2018</a></p>
@@ -96,9 +105,6 @@
     </nav>
   </div>
 
-  @yield('extra_scripts')
-
-  </body>
 
 </html>
 
