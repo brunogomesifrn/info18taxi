@@ -10,7 +10,7 @@
 
 
  <p> Nosso site fornece informações sobre o transporte privado da cidade de Goianinha/RN e região, nosso objetivo é fornecer segurança para os usuários, para que possam de forma segura viajar para o seu local de destino. 
-  Para mais informaçoes, acesse <a href="sobre.html"> sobre</a>. </p>
+  Para mais informaçoes, acesse <a href="/sobre"> sobre</a>. </p>
 
 	
 			 
