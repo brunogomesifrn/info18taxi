@@ -15,12 +15,8 @@
             <li class="nav-item ">
               <a class="nav-link" href="/">Página Inicial</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/criarconta">Criar Conta</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/fazerlogin">Fazer login
-              </a>
+           
+           
             </li>
             <li class="nav-item active">
               <a class="nav-link" href="/contato">Contato <span class="sr-only">(current)</span>
