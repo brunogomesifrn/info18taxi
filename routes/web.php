@@ -49,6 +49,8 @@ Route::group(['prefix' => 'motorista', 'middleware' => 'auth'], function()
 	Route::get('/motorista_editar', 'MotoristaControlador@edit')->name('motoristas_edit_post');
 	Route::get('/motorista_editar/{id}', 'MotoristaControlador@show')->name('motoristas_edit');
 	Route::get('/motorista_excluir/{id}', 'MotoristaControlador@destroy')->name('motoristas_destroy_post');
+    
+    Route::get('/', 'MotoristaControlador@avaliacao')->name('motoristas_index');
 });
 
 

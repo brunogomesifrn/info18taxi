@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
 use App\Motorista;
+use Auth;
 class MotoristaControlador extends Controller
 {
     /**
@@ -33,7 +34,7 @@ class MotoristaControlador extends Controller
             'sexo' => $request->input('sexo'),
             'tempo_profissao' => $request->input('tempo_profissao'),
             'categoria' => $request->input('categoria'),
-            'user_id' => $request->input('user_id'),
+            'user_id' => Auth::user()->id,
         ]);
 
         $mensagem = "Motorista cadastrado com sucesso";
@@ -79,6 +80,15 @@ class MotoristaControlador extends Controller
     {
         $motorista = Motorista::find($request->input('id'));
         $motorista->nome = $request->input('name');
+        $motorista->cpf = $request->input('cpf');
+        $motorista->telefone = $request->input('telefone');
+        $motorista->numero_cnh = $request->input('numero_cnh');
+        $motorista->sexo = $request->input('sexo');
+        $motorista->tempo_profissao = $request->input('tempo_profissao');
+        $motorista->categoria = $request->input('categoria');
+        
+
+
 
 
 
@@ -114,5 +124,14 @@ class MotoristaControlador extends Controller
     {
         $motoristas = Motorista::all();
         return view('index', compact('motoristas'));
+    }
+
+     public function avaliacao(Request $request)
+    {
+        Motorista::avaliacao([
+            'motorista_id' => $request->input('motorista_id'),
+            'nota' => $request->input('nota'),
+        ]);
+
     }
 }

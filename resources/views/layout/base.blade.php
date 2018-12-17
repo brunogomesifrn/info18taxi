@@ -65,7 +65,7 @@
 
             @auth
             <li class="nav-item">
-              <a class="nav-link" href="/home">Pefil</a>
+              <a class="nav-link" href="/home">Perfil</a>
             </li>
               <li class="nav-item">
               <a class="nav-link" href="/logout">Logout</a>
@@ -92,19 +92,16 @@
   
  
   
-  <div style="
-  position:fixed;
-  bottom: 0;
-  width:100%; 
-  margin:0px; 
-">
+ <div style="position:fixed;bottom: 0;width:100%;">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> 
       <div class="container-fluid">
         <p> <a class="navbar-brand" href="http://portal.ifrn.edu.br/">IFRN 2017-2018</a></p>
       </div>
     </nav>
   </div>
-
-
-</html>
+   
+  
+  
+   </body>
+ </html>
 

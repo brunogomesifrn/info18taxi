@@ -1,6 +1,6 @@
 @extends('layout.base')
 @section('conteudo')
-<p>Motoristas Cadastrados:</p>
+<h3>Motoristas Cadastrados:</h3>
 
 @if(isset($motoristas))
 	<ol>	
@@ -13,8 +13,15 @@
 @endif
 
 
+                               
+<div class="form-group row mb-0">
+                            <div class="col-md-6 offset-md-4">
+                            	<button type="submit" class="btn btn-primary">
+<p><a href="{{ route('form_cadastro_motorista') }}"><font color="white">Cadastrar Motorista</font></a></p>
+</button>
+</div>
+</div>
 
-<p><a href="{{ route('form_cadastro_motorista') }}">Cadastrar Motorista</a></p>
 @endsection
 
 
