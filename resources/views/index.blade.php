@@ -40,11 +40,12 @@
 
         <div class="col-lg-4 col-sm-6 text-center mb-4">
           <img class="rounded-circle img-fluid d-block mx-auto" src="http://www.drivr.es/wp-content/uploads/2017/06/conductor-drivr.png" alt="">
+          <img src="img/usuario.png" width="100">
           <h3> {{$m->nome}}<br/>
             <small>Telefone: {{$m->telefone}}</small>
           </h3>
           <p>Categoria: {{$m->categoria}}</p>
-          <li> <a href="{{ route('motoristas_avaliacao', ['id' => $m->id]) }}">Avaliar</a></li>
+          
         </div>
   @endforeach
       </div>

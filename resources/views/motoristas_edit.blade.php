@@ -37,7 +37,7 @@
                             <label for="cpf" class="col-md-4 col-form-label text-md-right">{{ __('CPF:') }}</label>
 
                             <div class="col-md-6">
-                                <input id="cpf" type="text" class="form-control{{ $errors->has('cpf') ? ' is-invalid' : '' }}" name="cpf" value="{{ $motorista->cpf}}" required autofocus>
+                                <input id="cpf" type="text" class="form-control{{ $errors->has('cpf') ? ' is-invalid' : '' }}" name="cpf" value="{{ $motorista->cpf}}" maxlength="11" required autofocus>
 
                                 @if ($errors->has('cpf'))
                                     <span class="invalid-feedback" role="alert">
@@ -51,7 +51,7 @@
                             <label for="telefone" class="col-md-4 col-form-label text-md-right">{{ __('Telefone:') }}</label>
 
                             <div class="col-md-6">
-                                <input id="name" type="text" class="form-control{{ $errors->has('telefone') ? ' is-invalid' : '' }}" name="telefone" value="{{ $motorista->telefone }}" required autofocus>
+                                <input id="name" type="text" class="form-control{{ $errors->has('telefone') ? ' is-invalid' : '' }}" name="telefone" value="{{ $motorista->telefone }}" maxlength="12" required autofocus>
 
                                 @if ($errors->has('telefone'))
                                     <span class="invalid-feedback" role="alert">
@@ -114,10 +114,15 @@
                         
                         
 
-                        
+                                                
+                <div class="form-group row mb-0">
+                            <div class="col-md-12 offset-md-6">
+                                <button type="submit" class="btn btn-primary">
+    <p align="justify-content-center"> <a href="{{ route('motoristas_edit_post') }}"><font color="white">SALVAR</font></a></p>
+</button>
+</div>
+</div>
 
-                        <center><input type="submit" value="Mandar"></center>
-                        
                     </form>
                 </div>
             </div>
