@@ -5,7 +5,7 @@
 @if(isset($motoristas))
 	<ol>	
 		@foreach($motoristas as $m)
-		<li>{{ $m->nome }} | <a href="{{ route('motoristas_edit', ['id' => $m->id]) }}">EDITAR</a> | <a href="{{ route('motoristas_destroy_post', ['id' => $m->id]) }}">REMOVER</a></li>
+		<li>{{ $m->nome }} | <a href="{{ route('motoristas_edit', ['id' => $m->id]) }}">EDITAR</a> | <a href="{{ route('motoristas_destroy_post', ['id' => $m->id]) }}">REMOVER</a>| <a href="{{ route('motoristas_avaliacao', ['id' => $m->id]) }}">Avaliar</a> |</li>
 		@endforeach
 	</ol>
 @else

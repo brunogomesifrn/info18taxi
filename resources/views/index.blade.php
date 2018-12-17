@@ -44,7 +44,7 @@
             <small>Telefone: {{$m->telefone}}</small>
           </h3>
           <p>Categoria: {{$m->categoria}}</p>
-           <a href="{{ route('motoristas_index', ['id' => $m->id]) }}">Avaliar</a></li>
+          <li> <a href="{{ route('motoristas_avaliacao', ['id' => $m->id]) }}">Avaliar</a></li>
         </div>
   @endforeach
       </div>

@@ -126,9 +126,9 @@ class MotoristaControlador extends Controller
         return view('index', compact('motoristas'));
     }
 
-     public function avaliacao(Request $request)
+     public function avaliacoes(Request $request)
     {
-        Motorista::avaliacao([
+        Motorista::avaliacoes([
             'motorista_id' => $request->input('motorista_id'),
             'nota' => $request->input('nota'),
         ]);
